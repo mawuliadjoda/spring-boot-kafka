@@ -9,6 +9,6 @@ public class KafkaProducerConfig {
 
     @Bean
     public NewTopic createTopic() {
-        return new NewTopic("adjoda-dev-demo-3", 5, (short) 1);
+        return new NewTopic("adjoda-dev-demo-1", 5, (short) 1);
     }
 }
