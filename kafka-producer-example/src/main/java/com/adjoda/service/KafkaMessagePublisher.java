@@ -1,5 +1,6 @@
 package com.adjoda.service;
 
+import com.adjoda.dto.Customer;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
@@ -26,5 +27,20 @@ public class KafkaMessagePublisher {
                 System.out.println("Unable to send message=[" + message + "] due to : " + ex.getMessage());
             }
         });
+    }
+
+    public void sendEventToTopic(Customer customer) {
+        try {
+            CompletableFuture<SendResult<String, Object>> completableFuture = kafkaTemplate.send("adjoda-dev-demo3", customer);
+            completableFuture.whenComplete((result, ex) -> {
+                if(ex == null) {
+                    System.out.println("Sent message=[" + customer.toString() + "] with offset = [" + result.getRecordMetadata().offset() + "]");
+                } else {
+                    System.out.println("Unable to send message=[" + customer.toString() + "] due to : " + ex.getMessage());
+                }
+            });
+        } catch (Exception ex) {
+            System.out.println("ERROR: " + ex.getMessage());
+        }
     }
 }
