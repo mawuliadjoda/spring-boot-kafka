@@ -5,18 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1badecfd-ff0a-4c2e-94c9-d408101e99e6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/kafka-schema-registry/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-schema-registry/src/main/java/com/adjoda/config/KafkaConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-schema-registry/src/main/java/com/adjoda/consumer/KafkaAvroConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-schema-registry/src/main/java/com/adjoda/controller/EventController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-schema-registry/src/main/java/com/adjoda/producer/KafkaAvroProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-schema-registry/src/main/resources/avro/employee.avsc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka-schema-registry/src/main/resources/avro/employee.avsc" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-schema-registry/src/main/resources/avro/employee.avsc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +39,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.KafkaSchemaRegistryApplication.executor": "Run",
+    "Maven.kafka-schema-registry [install].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
