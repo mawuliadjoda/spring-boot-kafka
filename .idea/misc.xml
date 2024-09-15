@@ -7,6 +7,8 @@
         <option value="$PROJECT_DIR$/kafka-schema-registry/pom.xml" />
         <option value="$PROJECT_DIR$/kafka-consumer-example/pom.xml" />
         <option value="$PROJECT_DIR$/kafka-producer-example/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-kafka-avro-producer/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-kafka-avro-consumer/pom.xml" />
       </list>
     </option>
   </component>

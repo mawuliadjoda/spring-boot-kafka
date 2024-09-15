@@ -7,9 +7,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="kafka-schema-registry" />
         <module name="kafka-consumer-example" />
         <module name="kafka-producer-example" />
+        <module name="spring-kafka-avro-producer" />
+        <module name="spring-kafka-avro-consumer" />
+        <module name="kafka-schema-registry" />
       </profile>
     </annotationProcessing>
   </component>
@@ -18,6 +20,8 @@
       <module name="kafka-consumer-example" options="-parameters" />
       <module name="kafka-producer-example" options="-parameters" />
       <module name="kafka-schema-registry" options="-parameters" />
+      <module name="spring-kafka-avro-consumer" options="-parameters" />
+      <module name="spring-kafka-avro-producer" options="-parameters" />
     </option>
   </component>
 </project>

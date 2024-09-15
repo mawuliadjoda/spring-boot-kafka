@@ -5,7 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1badecfd-ff0a-4c2e-94c9-d408101e99e6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/kafka-schema-registry/src/main/resources/avro/employee.avsc" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-schema-registry/src/main/resources/avro/employee.avsc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-kafka-avro-consumer/src/main/java/com/esprit/avro/consumer/PersonConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-kafka-avro-consumer/src/main/java/com/esprit/avro/model/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-kafka-avro-consumer/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-kafka-avro-consumer/src/main/resources/avro/person.avsc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-kafka-avro-producer/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-kafka-avro-producer/kafa-installation/2.docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-kafka-avro-producer/kafa-installation/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-kafka-avro-producer/src/main/java/com/esprit/avro/PersonController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-kafka-avro-producer/src/main/java/com/esprit/avro/config/KafkaTopicConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-kafka-avro-producer/src/main/java/com/esprit/avro/model/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-kafka-avro-producer/src/main/java/com/esprit/avro/producer/PersonProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-kafka-avro-producer/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-kafka-avro-producer/src/main/resources/avro/person.avsc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,13 +40,32 @@
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1726427082" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2h4FvrWJk4EtkpedCLwv9HxLxGZ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -38,16 +73,49 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.KafkaProducerExampleApplication.executor": "Run",
     "Application.KafkaSchemaRegistryApplication.executor": "Run",
+    "Application.SpringKafkaAvroConsumerApplication.executor": "Debug",
+    "Application.SpringKafkaAvroProducerApplication.executor": "Run",
     "Maven.kafka-schema-registry [install].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/dev/java/kafka/spring-boot-kafka"
+    "last_opened_file_path": "D:/dev/Java/git/spring-boot-kafka/spring-kafka-avro-producer",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\dev\Java\git\spring-boot-kafka\spring-kafka-avro-producer" />
+      <recent name="D:\dev\Java\git\spring-boot-kafka\spring-kafka-avro-consumer\src\main\java\com\esprit\avro\model" />
+      <recent name="D:\dev\Java\git\spring-boot-kafka\spring-kafka-avro-producer\src\main\java\com\esprit\avro\model" />
+      <recent name="D:\dev\Java\git\spring-boot-kafka\spring-kafka-avro-producer\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\dev\Java\git\spring-boot-kafka\spring-kafka-avro-producer\kafa-installation" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.esprit.avro.model" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.SpringKafkaAvroProducerApplication">
+    <configuration name="KafkaProducerExampleApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.adjoda.KafkaProducerExampleApplication" />
+      <module name="kafka-producer-example" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.adjoda.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="KafkaSchemaRegistryApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.adjoda.KafkaSchemaRegistryApplication" />
       <module name="kafka-schema-registry" />
@@ -61,8 +129,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SpringKafkaAvroConsumerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.esprit.avro.SpringKafkaAvroConsumerApplication" />
+      <module name="spring-kafka-avro-consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.esprit.avro.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringKafkaAvroProducerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.esprit.avro.SpringKafkaAvroProducerApplication" />
+      <module name="spring-kafka-avro-producer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.esprit.avro.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SpringKafkaAvroProducerApplication" />
+        <item itemvalue="Application.SpringKafkaAvroConsumerApplication" />
+        <item itemvalue="Application.KafkaProducerExampleApplication" />
         <item itemvalue="Application.KafkaSchemaRegistryApplication" />
       </list>
     </recent_temporary>
@@ -84,5 +181,16 @@
       <updated>1716845675519</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-kafka-avro-consumer/src/main/java/com/esprit/avro/consumer/PersonConsumer.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
