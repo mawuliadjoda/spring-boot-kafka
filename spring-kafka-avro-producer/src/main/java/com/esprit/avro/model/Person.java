@@ -5,11 +5,12 @@
  */
 package com.esprit.avro.model;
 
-import org.apache.avro.message.BinaryMessageDecoder;
-import org.apache.avro.message.BinaryMessageEncoder;
-import org.apache.avro.message.SchemaStore;
+import org.apache.avro.generic.GenericArray;
 import org.apache.avro.specific.SpecificData;
 import org.apache.avro.util.Utf8;
+import org.apache.avro.message.BinaryMessageEncoder;
+import org.apache.avro.message.BinaryMessageDecoder;
+import org.apache.avro.message.SchemaStore;
 
 @org.apache.avro.specific.AvroGenerated
 public class Person extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
@@ -72,8 +73,8 @@ public class Person extends org.apache.avro.specific.SpecificRecordBase implemen
     return DECODER.decode(b);
   }
 
-  private CharSequence firstName;
-  private CharSequence lastName;
+  private java.lang.CharSequence firstName;
+  private java.lang.CharSequence lastName;
   private int age;
 
   /**
@@ -89,16 +90,16 @@ public class Person extends org.apache.avro.specific.SpecificRecordBase implemen
    * @param lastName The new value for lastName
    * @param age The new value for age
    */
-  public Person(CharSequence firstName, CharSequence lastName, Integer age) {
+  public Person(java.lang.CharSequence firstName, java.lang.CharSequence lastName, java.lang.Integer age) {
     this.firstName = firstName;
     this.lastName = lastName;
     this.age = age;
   }
 
-  public SpecificData getSpecificData() { return MODEL$; }
+  public org.apache.avro.specific.SpecificData getSpecificData() { return MODEL$; }
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
   // Used by DatumWriter.  Applications should not call.
-  public Object get(int field$) {
+  public java.lang.Object get(int field$) {
     switch (field$) {
     case 0: return firstName;
     case 1: return lastName;
@@ -109,11 +110,11 @@ public class Person extends org.apache.avro.specific.SpecificRecordBase implemen
 
   // Used by DatumReader.  Applications should not call.
   @SuppressWarnings(value="unchecked")
-  public void put(int field$, Object value$) {
+  public void put(int field$, java.lang.Object value$) {
     switch (field$) {
-    case 0: firstName = (CharSequence)value$; break;
-    case 1: lastName = (CharSequence)value$; break;
-    case 2: age = (Integer)value$; break;
+    case 0: firstName = (java.lang.CharSequence)value$; break;
+    case 1: lastName = (java.lang.CharSequence)value$; break;
+    case 2: age = (java.lang.Integer)value$; break;
     default: throw new IndexOutOfBoundsException("Invalid index: " + field$);
     }
   }
@@ -122,7 +123,7 @@ public class Person extends org.apache.avro.specific.SpecificRecordBase implemen
    * Gets the value of the 'firstName' field.
    * @return The value of the 'firstName' field.
    */
-  public CharSequence getFirstName() {
+  public java.lang.CharSequence getFirstName() {
     return firstName;
   }
 
@@ -131,7 +132,7 @@ public class Person extends org.apache.avro.specific.SpecificRecordBase implemen
    * Sets the value of the 'firstName' field.
    * @param value the value to set.
    */
-  public void setFirstName(CharSequence value) {
+  public void setFirstName(java.lang.CharSequence value) {
     this.firstName = value;
   }
 
@@ -139,7 +140,7 @@ public class Person extends org.apache.avro.specific.SpecificRecordBase implemen
    * Gets the value of the 'lastName' field.
    * @return The value of the 'lastName' field.
    */
-  public CharSequence getLastName() {
+  public java.lang.CharSequence getLastName() {
     return lastName;
   }
 
@@ -148,7 +149,7 @@ public class Person extends org.apache.avro.specific.SpecificRecordBase implemen
    * Sets the value of the 'lastName' field.
    * @param value the value to set.
    */
-  public void setLastName(CharSequence value) {
+  public void setLastName(java.lang.CharSequence value) {
     this.lastName = value;
   }
 
@@ -173,8 +174,8 @@ public class Person extends org.apache.avro.specific.SpecificRecordBase implemen
    * Creates a new Person RecordBuilder.
    * @return A new Person RecordBuilder
    */
-  public static Builder newBuilder() {
-    return new Builder();
+  public static com.esprit.avro.model.Person.Builder newBuilder() {
+    return new com.esprit.avro.model.Person.Builder();
   }
 
   /**
@@ -182,11 +183,11 @@ public class Person extends org.apache.avro.specific.SpecificRecordBase implemen
    * @param other The existing builder to copy.
    * @return A new Person RecordBuilder
    */
-  public static Builder newBuilder(Builder other) {
+  public static com.esprit.avro.model.Person.Builder newBuilder(com.esprit.avro.model.Person.Builder other) {
     if (other == null) {
-      return new Builder();
+      return new com.esprit.avro.model.Person.Builder();
     } else {
-      return new Builder(other);
+      return new com.esprit.avro.model.Person.Builder(other);
     }
   }
 
@@ -195,11 +196,11 @@ public class Person extends org.apache.avro.specific.SpecificRecordBase implemen
    * @param other The existing instance to copy.
    * @return A new Person RecordBuilder
    */
-  public static Builder newBuilder(Person other) {
+  public static com.esprit.avro.model.Person.Builder newBuilder(com.esprit.avro.model.Person other) {
     if (other == null) {
-      return new Builder();
+      return new com.esprit.avro.model.Person.Builder();
     } else {
-      return new Builder(other);
+      return new com.esprit.avro.model.Person.Builder(other);
     }
   }
 
@@ -210,8 +211,8 @@ public class Person extends org.apache.avro.specific.SpecificRecordBase implemen
   public static class Builder extends org.apache.avro.specific.SpecificRecordBuilderBase<Person>
     implements org.apache.avro.data.RecordBuilder<Person> {
 
-    private CharSequence firstName;
-    private CharSequence lastName;
+    private java.lang.CharSequence firstName;
+    private java.lang.CharSequence lastName;
     private int age;
 
     /** Creates a new Builder */
@@ -223,7 +224,7 @@ public class Person extends org.apache.avro.specific.SpecificRecordBase implemen
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(Builder other) {
+    private Builder(com.esprit.avro.model.Person.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.firstName)) {
         this.firstName = data().deepCopy(fields()[0].schema(), other.firstName);
@@ -243,7 +244,7 @@ public class Person extends org.apache.avro.specific.SpecificRecordBase implemen
      * Creates a Builder by copying an existing Person instance
      * @param other The existing instance to copy.
      */
-    private Builder(Person other) {
+    private Builder(com.esprit.avro.model.Person other) {
       super(SCHEMA$, MODEL$);
       if (isValidValue(fields()[0], other.firstName)) {
         this.firstName = data().deepCopy(fields()[0].schema(), other.firstName);
@@ -263,7 +264,7 @@ public class Person extends org.apache.avro.specific.SpecificRecordBase implemen
       * Gets the value of the 'firstName' field.
       * @return The value.
       */
-    public CharSequence getFirstName() {
+    public java.lang.CharSequence getFirstName() {
       return firstName;
     }
 
@@ -273,7 +274,7 @@ public class Person extends org.apache.avro.specific.SpecificRecordBase implemen
       * @param value The value of 'firstName'.
       * @return This builder.
       */
-    public Builder setFirstName(CharSequence value) {
+    public com.esprit.avro.model.Person.Builder setFirstName(java.lang.CharSequence value) {
       validate(fields()[0], value);
       this.firstName = value;
       fieldSetFlags()[0] = true;
@@ -293,7 +294,7 @@ public class Person extends org.apache.avro.specific.SpecificRecordBase implemen
       * Clears the value of the 'firstName' field.
       * @return This builder.
       */
-    public Builder clearFirstName() {
+    public com.esprit.avro.model.Person.Builder clearFirstName() {
       firstName = null;
       fieldSetFlags()[0] = false;
       return this;
@@ -303,7 +304,7 @@ public class Person extends org.apache.avro.specific.SpecificRecordBase implemen
       * Gets the value of the 'lastName' field.
       * @return The value.
       */
-    public CharSequence getLastName() {
+    public java.lang.CharSequence getLastName() {
       return lastName;
     }
 
@@ -313,7 +314,7 @@ public class Person extends org.apache.avro.specific.SpecificRecordBase implemen
       * @param value The value of 'lastName'.
       * @return This builder.
       */
-    public Builder setLastName(CharSequence value) {
+    public com.esprit.avro.model.Person.Builder setLastName(java.lang.CharSequence value) {
       validate(fields()[1], value);
       this.lastName = value;
       fieldSetFlags()[1] = true;
@@ -333,7 +334,7 @@ public class Person extends org.apache.avro.specific.SpecificRecordBase implemen
       * Clears the value of the 'lastName' field.
       * @return This builder.
       */
-    public Builder clearLastName() {
+    public com.esprit.avro.model.Person.Builder clearLastName() {
       lastName = null;
       fieldSetFlags()[1] = false;
       return this;
@@ -353,7 +354,7 @@ public class Person extends org.apache.avro.specific.SpecificRecordBase implemen
       * @param value The value of 'age'.
       * @return This builder.
       */
-    public Builder setAge(int value) {
+    public com.esprit.avro.model.Person.Builder setAge(int value) {
       validate(fields()[2], value);
       this.age = value;
       fieldSetFlags()[2] = true;
@@ -373,7 +374,7 @@ public class Person extends org.apache.avro.specific.SpecificRecordBase implemen
       * Clears the value of the 'age' field.
       * @return This builder.
       */
-    public Builder clearAge() {
+    public com.esprit.avro.model.Person.Builder clearAge() {
       fieldSetFlags()[2] = false;
       return this;
     }
@@ -383,13 +384,13 @@ public class Person extends org.apache.avro.specific.SpecificRecordBase implemen
     public Person build() {
       try {
         Person record = new Person();
-        record.firstName = fieldSetFlags()[0] ? this.firstName : (CharSequence) defaultValue(fields()[0]);
-        record.lastName = fieldSetFlags()[1] ? this.lastName : (CharSequence) defaultValue(fields()[1]);
-        record.age = fieldSetFlags()[2] ? this.age : (Integer) defaultValue(fields()[2]);
+        record.firstName = fieldSetFlags()[0] ? this.firstName : (java.lang.CharSequence) defaultValue(fields()[0]);
+        record.lastName = fieldSetFlags()[1] ? this.lastName : (java.lang.CharSequence) defaultValue(fields()[1]);
+        record.age = fieldSetFlags()[2] ? this.age : (java.lang.Integer) defaultValue(fields()[2]);
         return record;
       } catch (org.apache.avro.AvroMissingFieldException e) {
         throw e;
-      } catch (Exception e) {
+      } catch (java.lang.Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
       }
     }
